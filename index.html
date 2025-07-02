@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Ayman Yassine - Développeur Full Stack</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+       
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#projects">Projets</a></li>
+            <li><a href="#experience">Expérience</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <canvas class="hero-bg"></canvas>
+        <div class="hero-content">
+            <div class="profile-img">
+                <div style="width: 100%; height: 100%; border-radius: 50%; background: #333; display: flex; align-items: center; justify-content: center; font-size: 60px; color: #00d4ff;">
+                    <i class="fas fa-user"></i>
+                </div>
+            </div>
+            <h1>Ayman Yassine</h1>
+            <p>Développeur Full Stack | Étudiant en Génie Informatique</p>
+            <a href="#contact" class="cta-button">Me Contacter</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <h2>À Propos</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p id="about-text">
+                    
+                </p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-item">
+                    <i class="fab fa-java"></i>
+                    <p>Java</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-python"></i>
+                    <p>Python</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-js"></i>
+                    <p>JavaScript</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-react"></i>
+                    <p>React</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-database"></i>
+                    <p>SQL</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-html5"></i>
+                    <p>HTML/CSS</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fas fa-server"></i>
+                    <p>Spring Boot</p>
+                </div>
+                <div class="skill-item">
+                    <i class="fab fa-php"></i>
+                    <p>PHP</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Mes Projets</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Blog Personnel</h3>
+                <p>Développement d'une plateforme de blog personnel en full-stack, offrant une expérience utilisateur moderne et intuitive.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Django</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Python</span>
+                </div>
+                <a href="https://github.com/aymenyassine/BlogPersonnel" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>E-Help : Gestion des Tickets</h3>
+                <p>Application web complète pour la gestion des tickets d'assistance technique avec workflow optimisé entre différents rôles utilisateurs.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Spring Boot</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">Java</span>
+                </div>
+                <a href="https://github.com/aymenyassine/gestion_ticket" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Plateforme Marrakech</h3>
+                <p>Plateforme web dédiée à la réservation et découverte touristique de Marrakech avec interface moderne et fonctionnalités avancées.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Symfony</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">MySQL</span>
+                </div>
+                <a href="https://github.com/aymenyassine/symfony_project" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+
+            <div class="project-card">
+                <h3>Gestion de Films</h3>
+                <p>Site web de gestion de films combinant différentes technologies pour offrir une expérience utilisateur fluide et intuitive.</p>
+                <div class="project-tech">
+                    <span class="tech-tag">Web Technologies</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">HTML</span>
+                </div>
+                <a href="https://github.com/aymanyassine/CHAGU_Movies" class="project-link" target="_blank">
+                    <i class="fab fa-github"></i> Voir sur GitHub
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section
+    <section id="experience">
+        <h2>Expérience Professionnelle</h2>
+        <div class="experience-item">
+            <h3>Stagiaire Développeur - Cooper Pharma</h3>
+            <div class="date">Juin 2024 - Août 2024 | Casablanca, Maroc</div>
+            <ul>
+                <li>Développement avec Java Spring Boot : Participation au développement de nouvelles fonctionnalités et maintenance des applications internes (architecture REST, services métiers)</li>
+                <li>Rédaction de scripts SQL (Microsoft SQL Server) : Extraction, manipulation et analyse de données via des requêtes complexes pour générer des rapports métiers</li>
+                <li>Validation des données sur Sage X3 (version Sage V6) : Réalisation de tests de cohérence et de qualité des données dans le cadre de la gestion de production et de stocks</li>
+                <li>Détection et suivi des anomalies : Identification des bugs techniques, déclaration via outils internes, et collaboration avec les équipes de développement pour leur résolution</li>
+            </ul>
+        </div>
+    </section> -->
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Me Contacter</h2>
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3 style="color: #00d4ff; margin-bottom: 30px;">Informations de Contact</h3>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong><br>
+                        aymenyassine301@gmail.com
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Téléphone</strong><br>
+                        (+212) 772674785
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <strong>GitHub</strong><br>
+                        <a href="https://github.com/aymanyassine" target="_blank" style="color: #00d4ff;">github.com/aymanyassine</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3 style="color: #00d4ff; margin-bottom: 30px;">Envoyez-moi un message</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" placeholder="Votre nom" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Votre email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" placeholder="Sujet">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Votre message" required></textarea>
+                    </div>
+                    <button type="submit" class="send-button">
+                        <i class="fas fa-paper-plane"></i> Envoyer le message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
